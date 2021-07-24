@@ -507,7 +507,7 @@ public extension Month {
     }
 }
 
-struct DateRange {
+public struct DateRange {
     let startDate: Date
     let endDate: Date
     
