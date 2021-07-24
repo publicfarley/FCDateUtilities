@@ -6,6 +6,6 @@ final class FCDateUtilitiesTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(FCDateUtilities().text, "Hello, World!")
+        XCTAssertTrue(Date.today.isSame(as: .today))
     }
 }
