@@ -508,10 +508,10 @@ public extension Month {
 }
 
 public struct DateRange {
-    let startDate: Date
-    let endDate: Date
+    public let startDate: Date
+    public let endDate: Date
     
-    init?(startDate: Date, endDate: Date) {
+    public init?(startDate: Date, endDate: Date) {
         // startDate must be <= endDate
         guard startDate.isLess(than: endDate) || startDate == endDate else {
             return nil
@@ -522,7 +522,7 @@ public struct DateRange {
     }
 }
 
-extension DateRange {
+public extension DateRange {
     static var today: DateRange? {
         let today = Date.today
         return DateRange(startDate: today, endDate: today)
